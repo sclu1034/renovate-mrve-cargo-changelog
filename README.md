@@ -1,17 +1,18 @@
-# minimal-reproduction-template
+# 31279
 
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+Reproduction for https://github.com/renovatebot/renovate/discussions/31279
 
 ## Current behavior
 
-Explain the current behavior here.
+Version range for changelogs is calculated from the value in `Cargo.toml`,
+even though that's actually a semver range, and the installed version in `Cargo.lock`
+is newer.
 
 ## Expected behavior
 
-Explain the expected behavior here.
+Use the locked/installed version from `Cargo.lock` to calculate the version range that
+changelog entries should cover.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/31279
